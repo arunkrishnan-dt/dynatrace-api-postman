@@ -1,0 +1,1073 @@
+{
+	"info": {
+		"_postman_id": "0e443982-e6f6-457e-8dc0-db9f7fd96a6b",
+		"name": "Dynatrace APIs",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "9340088"
+	},
+	"item": [
+		{
+			"name": "Environment API v1",
+			"item": [
+				{
+					"name": "Anonymization",
+					"item": [
+						{
+							"name": "Anonymization Jobs",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{env_api_v1_url}}/anonymize/anonymizationJobs/{requestId}",
+									"host": [
+										"{{env_api_v1_url}}"
+									],
+									"path": [
+										"anonymize",
+										"anonymizationJobs",
+										"{requestId}"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Anonymization Jobs",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"url": {
+									"raw": "{{env_api_v1_url}}/anonymizationJobs",
+									"host": [
+										"{{env_api_v1_url}}"
+									],
+									"path": [
+										"anonymizationJobs"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Cluster time",
+					"item": [
+						{
+							"name": "Cluster time",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{env_api_v1_url}}/time",
+									"host": [
+										"{{env_api_v1_url}}"
+									],
+									"path": [
+										"time"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Cluster version",
+					"item": [
+						{
+							"name": "Cluster version",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{env_api_v1_url}}/config/clusterversion",
+									"host": [
+										"{{env_api_v1_url}}"
+									],
+									"path": [
+										"config",
+										"clusterversion"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Deployment",
+					"item": [
+						{
+							"name": "OneAgent installer versions - List",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{env_api_v1_url}}/deployment/installer/agent/versions/unix/default",
+									"host": [
+										"{{env_api_v1_url}}"
+									],
+									"path": [
+										"deployment",
+										"installer",
+										"agent",
+										"versions",
+										"unix",
+										"default"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "OneAgent installer version - Download",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{env_api_v1_url}}/deployment/installer/agent/unix/default/version/{version}",
+									"host": [
+										"{{env_api_v1_url}}"
+									],
+									"path": [
+										"deployment",
+										"installer",
+										"agent",
+										"unix",
+										"default",
+										"version",
+										"{version}"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "ActiveGate installer versions - List",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{env_api_v1_url}}/deployment/installer/gateway/versions/unix",
+									"host": [
+										"{{env_api_v1_url}}"
+									],
+									"path": [
+										"deployment",
+										"installer",
+										"gateway",
+										"versions",
+										"unix"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "ActiveGate installer version - Download",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{env_api_v1_url}}/deployment/installer/gateway/unix/version/{version}",
+									"host": [
+										"{{env_api_v1_url}}"
+									],
+									"path": [
+										"deployment",
+										"installer",
+										"gateway",
+										"unix",
+										"version",
+										"{version}"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Log Monitoring - Hosts",
+					"item": [
+						{
+							"name": "OS logs - List",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{env_api_v1_url}}/entity/infrastructure/hosts/{hostId}/logs",
+									"host": [
+										"{{env_api_v1_url}}"
+									],
+									"path": [
+										"entity",
+										"infrastructure",
+										"hosts",
+										"{hostId}",
+										"logs"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Log Monitoring - Process groups",
+					"item": [
+						{
+							"name": "Process Group logs - List",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{env_api_v1_url}}/entity/infrastructure/process-groups/{pgId}/logs",
+									"host": [
+										"{{env_api_v1_url}}"
+									],
+									"path": [
+										"entity",
+										"infrastructure",
+										"process-groups",
+										"{pgId}",
+										"logs"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "OneAgent on a host",
+					"item": [
+						{
+							"name": "OneAgent deployment info",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{env_api_v1_url}}/oneagents",
+									"host": [
+										"{{env_api_v1_url}}"
+									],
+									"path": [
+										"oneagents"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Synthetic - Locations, nodes, and configuration",
+					"item": [
+						{
+							"name": "Synthetic locations - List",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{env_api_v1_url}}/synthetic/locations",
+									"host": [
+										"{{env_api_v1_url}}"
+									],
+									"path": [
+										"synthetic",
+										"locations"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Synthetic location details - Specific",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{env_api_v1_url}}/synthetic/locations/GEOLOCATION-B1B096907F0E9A8C",
+									"host": [
+										"{{env_api_v1_url}}"
+									],
+									"path": [
+										"synthetic",
+										"locations",
+										"GEOLOCATION-B1B096907F0E9A8C"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Synthetic nodes (Pvt) - List",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{env_api_v1_url}}/synthetic/nodes",
+									"host": [
+										"{{env_api_v1_url}}"
+									],
+									"path": [
+										"synthetic",
+										"nodes"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Synthetic node details (Pvt) - Specific",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{env_api_v1_url}}/synthetic/nodes/{nodeId}",
+									"host": [
+										"{{env_api_v1_url}}"
+									],
+									"path": [
+										"synthetic",
+										"nodes",
+										"{nodeId}"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Synthetic - Monitors",
+					"item": [
+						{
+							"name": "Synthetic monitors - List",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{env_api_v1_url}}/synthetic/monitors",
+									"host": [
+										"{{env_api_v1_url}}"
+									],
+									"path": [
+										"synthetic",
+										"monitors"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Synthetic monitor details - specific",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{env_api_v1_url}}/synthetic/monitors/{monitorId}",
+									"host": [
+										"{{env_api_v1_url}}"
+									],
+									"path": [
+										"synthetic",
+										"monitors",
+										"{monitorId}"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Timeseries",
+					"item": [
+						{
+							"name": "Metric definitions - List",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{env_api_v1_url}}/timeseries",
+									"host": [
+										"{{env_api_v1_url}}"
+									],
+									"path": [
+										"timeseries"
+									],
+									"query": [
+										{
+											"key": "source",
+											"value": null,
+											"disabled": true
+										},
+										{
+											"key": "detailedSource",
+											"value": null,
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Metric - Specific",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{env_api_v1_url}}/timeseries/{timeseriesidentifier}",
+									"host": [
+										"{{env_api_v1_url}}"
+									],
+									"path": [
+										"timeseries",
+										"{timeseriesidentifier}"
+									],
+									"query": [
+										{
+											"key": "includeData",
+											"value": null,
+											"disabled": true
+										},
+										{
+											"key": "aggregationType",
+											"value": null,
+											"disabled": true
+										},
+										{
+											"key": "startTimestamp",
+											"value": null,
+											"disabled": true
+										},
+										{
+											"key": "endTimestamp",
+											"value": null,
+											"disabled": true
+										},
+										{
+											"key": "predict",
+											"value": null,
+											"disabled": true
+										},
+										{
+											"key": "relativeTime",
+											"value": null,
+											"disabled": true
+										},
+										{
+											"key": "queryMode",
+											"value": null,
+											"disabled": true
+										},
+										{
+											"key": "entity",
+											"value": null,
+											"disabled": true
+										},
+										{
+											"key": "tag",
+											"value": null,
+											"disabled": true
+										},
+										{
+											"key": "percentile",
+											"value": null,
+											"disabled": true
+										},
+										{
+											"key": "includeParentIds",
+											"value": null,
+											"disabled": true
+										},
+										{
+											"key": "considerMaintenanceWindowsForAvailability",
+											"value": null,
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Topology & Smartscape - Application",
+					"item": [
+						{
+							"name": "Applications - List",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{env_api_v1_url}}/entity/applications",
+									"host": [
+										"{{env_api_v1_url}}"
+									],
+									"path": [
+										"entity",
+										"applications"
+									],
+									"query": [
+										{
+											"key": "startTimestamp",
+											"value": null,
+											"disabled": true
+										},
+										{
+											"key": "endTimestamp",
+											"value": null,
+											"disabled": true
+										},
+										{
+											"key": "relativeTime",
+											"value": null,
+											"disabled": true
+										},
+										{
+											"key": "tag",
+											"value": null,
+											"disabled": true
+										},
+										{
+											"key": "entity",
+											"value": null,
+											"disabled": true
+										},
+										{
+											"key": "managementZone",
+											"value": null,
+											"disabled": true
+										},
+										{
+											"key": "includeDetails",
+											"value": null,
+											"disabled": true
+										},
+										{
+											"key": "pageSize",
+											"value": null,
+											"disabled": true
+										},
+										{
+											"key": "nextPageKey",
+											"value": null,
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Application details - Specific",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{env_api_v1_url}}/entity/applications/{meIdentifier}",
+									"host": [
+										"{{env_api_v1_url}}"
+									],
+									"path": [
+										"entity",
+										"applications",
+										"{meIdentifier}"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Application baselines - Specific",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{env_api_v1_url}}/entity/applications/{meIdentifier}/baseline",
+									"host": [
+										"{{env_api_v1_url}}"
+									],
+									"path": [
+										"entity",
+										"applications",
+										"{meIdentifier}",
+										"baseline"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Topology & Smartscape - Host",
+					"item": [
+						{
+							"name": "Hosts - List",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{env_api_v1_url}}/entity/infrastructure/hosts",
+									"host": [
+										"{{env_api_v1_url}}"
+									],
+									"path": [
+										"entity",
+										"infrastructure",
+										"hosts"
+									],
+									"query": [
+										{
+											"key": "startTimestamp",
+											"value": "",
+											"disabled": true
+										},
+										{
+											"key": "endTimestamp",
+											"value": "",
+											"disabled": true
+										},
+										{
+											"key": "relativeTime",
+											"value": "",
+											"disabled": true
+										},
+										{
+											"key": "tag",
+											"value": "",
+											"disabled": true
+										},
+										{
+											"key": "showMonitoringCandidates",
+											"value": null,
+											"disabled": true
+										},
+										{
+											"key": "entity",
+											"value": "",
+											"disabled": true
+										},
+										{
+											"key": "managementZone",
+											"value": "",
+											"disabled": true
+										},
+										{
+											"key": "hostGroupId",
+											"value": null,
+											"disabled": true
+										},
+										{
+											"key": "hostGroupName",
+											"value": null,
+											"disabled": true
+										},
+										{
+											"key": "includeDetails",
+											"value": "",
+											"disabled": true
+										},
+										{
+											"key": "pageSize",
+											"value": "",
+											"disabled": true
+										},
+										{
+											"key": "nextPageKey",
+											"value": "",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Host details - Specific",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{env_api_v1_url}}/entity/infrastructure/hosts/{meIdentifier}",
+									"host": [
+										"{{env_api_v1_url}}"
+									],
+									"path": [
+										"entity",
+										"infrastructure",
+										"hosts",
+										"{meIdentifier}"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Topology & Smartscape - Process",
+					"item": [
+						{
+							"name": "Processes - List",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{env_api_v1_url}}/entity/infrastructure/processes",
+									"host": [
+										"{{env_api_v1_url}}"
+									],
+									"path": [
+										"entity",
+										"infrastructure",
+										"processes"
+									],
+									"query": [
+										{
+											"key": "startTimestamp",
+											"value": "",
+											"disabled": true
+										},
+										{
+											"key": "endTimestamp",
+											"value": "",
+											"disabled": true
+										},
+										{
+											"key": "relativeTime",
+											"value": "",
+											"disabled": true
+										},
+										{
+											"key": "tag",
+											"value": "",
+											"disabled": true
+										},
+										{
+											"key": "entity",
+											"value": "",
+											"disabled": true
+										},
+										{
+											"key": "hostTag",
+											"value": "",
+											"disabled": true
+										},
+										{
+											"key": "host",
+											"value": "",
+											"disabled": true
+										},
+										{
+											"key": "actualMonitoringState",
+											"value": null,
+											"disabled": true
+										},
+										{
+											"key": "expectedMonitoringState",
+											"value": null,
+											"disabled": true
+										},
+										{
+											"key": "managementZone",
+											"value": "",
+											"disabled": true
+										},
+										{
+											"key": "includeDetails",
+											"value": "",
+											"disabled": true
+										},
+										{
+											"key": "pageSize",
+											"value": "",
+											"disabled": true
+										},
+										{
+											"key": "nextPageKey",
+											"value": "",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Process details - Specific",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{env_api_v1_url}}/entity/infrastructure/processes/{meIdentifier}",
+									"host": [
+										"{{env_api_v1_url}}"
+									],
+									"path": [
+										"entity",
+										"infrastructure",
+										"processes",
+										"{meIdentifier}"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Topology & Smartscape - Process group",
+					"item": [
+						{
+							"name": "Process Groups - List",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{env_api_v1_url}}/entity/infrastructure/process-group",
+									"host": [
+										"{{env_api_v1_url}}"
+									],
+									"path": [
+										"entity",
+										"infrastructure",
+										"process-group"
+									],
+									"query": [
+										{
+											"key": "startTimestamp",
+											"value": "",
+											"disabled": true
+										},
+										{
+											"key": "endTimestamp",
+											"value": "",
+											"disabled": true
+										},
+										{
+											"key": "relativeTime",
+											"value": "",
+											"disabled": true
+										},
+										{
+											"key": "tag",
+											"value": "",
+											"disabled": true
+										},
+										{
+											"key": "entity",
+											"value": "",
+											"disabled": true
+										},
+										{
+											"key": "host",
+											"value": "",
+											"disabled": true
+										},
+										{
+											"key": "managementZone",
+											"value": "",
+											"disabled": true
+										},
+										{
+											"key": "includeDetails",
+											"value": "",
+											"disabled": true
+										},
+										{
+											"key": "pageSize",
+											"value": "",
+											"disabled": true
+										},
+										{
+											"key": "nextPageKey",
+											"value": "",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Process group - Specific",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{env_api_v1_url}}/entity/infrastructure/process-group/{meIdentifier}",
+									"host": [
+										"{{env_api_v1_url}}"
+									],
+									"path": [
+										"entity",
+										"infrastructure",
+										"process-group",
+										"{meIdentifier}"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Topology & Smartscape - Service",
+					"item": [
+						{
+							"name": "Services - List",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{env_api_v1_url}}/entity/services",
+									"host": [
+										"{{env_api_v1_url}}"
+									],
+									"path": [
+										"entity",
+										"services"
+									],
+									"query": [
+										{
+											"key": "startTimestamp",
+											"value": "",
+											"disabled": true
+										},
+										{
+											"key": "endTimestamp",
+											"value": "",
+											"disabled": true
+										},
+										{
+											"key": "relativeTime",
+											"value": "",
+											"disabled": true
+										},
+										{
+											"key": "tag",
+											"value": "",
+											"disabled": true
+										},
+										{
+											"key": "entity",
+											"value": "",
+											"disabled": true
+										},
+										{
+											"key": "managementZone",
+											"value": "",
+											"disabled": true
+										},
+										{
+											"key": "includeDetails",
+											"value": "",
+											"disabled": true
+										},
+										{
+											"key": "pageSize",
+											"value": "",
+											"disabled": true
+										},
+										{
+											"key": "nextPageKey",
+											"value": "",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Service - Specific",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{env_api_v1_url}}/entity/services/{meIdentifier}",
+									"host": [
+										"{{env_api_v1_url}}"
+									],
+									"path": [
+										"entity",
+										"services",
+										"{meIdentifier}"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Service baseline - Specific",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{env_api_v1_url}}/entity/services/{meIdentifier}/baseline",
+									"host": [
+										"{{env_api_v1_url}}"
+									],
+									"path": [
+										"entity",
+										"services",
+										"{meIdentifier}",
+										"baseline"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Environment API v2",
+			"item": []
+		}
+	],
+	"auth": {
+		"type": "apikey",
+		"apikey": [
+			{
+				"key": "value",
+				"value": "{{api_token}}",
+				"type": "string"
+			},
+			{
+				"key": "key",
+				"value": "Authorization",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}
