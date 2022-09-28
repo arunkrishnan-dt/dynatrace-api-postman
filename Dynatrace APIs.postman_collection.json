@@ -637,7 +637,7 @@
 										},
 										{
 											"key": "relativeTime",
-											"value": "",
+											"value": "3days",
 											"disabled": true
 										},
 										{
@@ -647,7 +647,7 @@
 										},
 										{
 											"key": "showMonitoringCandidates",
-											"value": null,
+											"value": "",
 											"disabled": true
 										},
 										{
@@ -662,12 +662,12 @@
 										},
 										{
 											"key": "hostGroupId",
-											"value": null,
+											"value": "",
 											"disabled": true
 										},
 										{
 											"key": "hostGroupName",
-											"value": null,
+											"value": "",
 											"disabled": true
 										},
 										{
@@ -1032,7 +1032,4555 @@
 		},
 		{
 			"name": "Environment API v2",
-			"item": []
+			"item": [
+				{
+					"name": "Access Tokens - ActiveGate Tokens",
+					"item": [
+						{
+							"name": "ActiveGate tokens",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{env_api_v2_url}}/activeGateTokens",
+									"host": [
+										"{{env_api_v2_url}}"
+									],
+									"path": [
+										"activeGateTokens"
+									],
+									"query": [
+										{
+											"key": "nextPageKey",
+											"value": null,
+											"disabled": true
+										},
+										{
+											"key": "pageSize",
+											"value": null,
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "ActiveGate token metadata - Specific",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{env_api_v2_url}}/activeGateTokens/{activeGateTokenIdentifier}",
+									"host": [
+										"{{env_api_v2_url}}"
+									],
+									"path": [
+										"activeGateTokens",
+										"{activeGateTokenIdentifier}"
+									],
+									"query": [
+										{
+											"key": "nextPageKey",
+											"value": null,
+											"disabled": true
+										},
+										{
+											"key": "pageSize",
+											"value": null,
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Access TOkens - API tokens",
+					"item": [
+						{
+							"name": "Api tokens - List",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{env_api_v2_url}}/apiTokens",
+									"host": [
+										"{{env_api_v2_url}}"
+									],
+									"path": [
+										"apiTokens"
+									],
+									"query": [
+										{
+											"key": "nextPageKey",
+											"value": null,
+											"disabled": true
+										},
+										{
+											"key": "pageSize",
+											"value": null,
+											"disabled": true
+										},
+										{
+											"key": "apiTokenSelector",
+											"value": null,
+											"disabled": true
+										},
+										{
+											"key": "fields",
+											"value": null,
+											"disabled": true
+										},
+										{
+											"key": "from",
+											"value": null,
+											"disabled": true
+										},
+										{
+											"key": "to",
+											"value": null,
+											"disabled": true
+										},
+										{
+											"key": "sort",
+											"value": null,
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Api token - Specific",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{env_api_v2_url}}/apiTokens/{id}",
+									"host": [
+										"{{env_api_v2_url}}"
+									],
+									"path": [
+										"apiTokens",
+										"{id}"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "ActiveGates",
+					"item": [
+						{
+							"name": "ActiveGates - List",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{env_api_v2_url}}/activeGates",
+									"host": [
+										"{{env_api_v2_url}}"
+									],
+									"path": [
+										"activeGates"
+									],
+									"query": [
+										{
+											"key": "hostname",
+											"value": null,
+											"disabled": true
+										},
+										{
+											"key": "osType",
+											"value": null,
+											"disabled": true
+										},
+										{
+											"key": "networkAddress",
+											"value": null,
+											"disabled": true
+										},
+										{
+											"key": "loadBalancerAddress",
+											"value": null,
+											"disabled": true
+										},
+										{
+											"key": "type",
+											"value": null,
+											"disabled": true
+										},
+										{
+											"key": "networkZone",
+											"value": null,
+											"disabled": true
+										},
+										{
+											"key": "updateStatus",
+											"value": null,
+											"disabled": true
+										},
+										{
+											"key": "versionCompareType",
+											"value": null,
+											"disabled": true
+										},
+										{
+											"key": "version",
+											"value": null,
+											"disabled": true
+										},
+										{
+											"key": "autoUpdate",
+											"value": null,
+											"disabled": true
+										},
+										{
+											"key": "group",
+											"value": null,
+											"disabled": true
+										},
+										{
+											"key": "online",
+											"value": null,
+											"disabled": true
+										},
+										{
+											"key": "enabledModule",
+											"value": null,
+											"disabled": true
+										},
+										{
+											"key": "disabledModule",
+											"value": null,
+											"disabled": true
+										},
+										{
+											"key": "containerized",
+											"value": null,
+											"disabled": true
+										},
+										{
+											"key": "tokenState",
+											"value": null,
+											"disabled": true
+										},
+										{
+											"key": "tokenExpirationSet",
+											"value": null,
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "ActiveGate - Specific",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{env_api_v2_url}}/activeGates/{agid}",
+									"host": [
+										"{{env_api_v2_url}}"
+									],
+									"path": [
+										"activeGates",
+										"{agid}"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "ActiveGates - ActiveGate tokens enforcement",
+					"item": [
+						{
+							"name": "ActiveGate token enforcement status",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{env_api_v2_url}}/activeGates/tokenEnforcement",
+									"host": [
+										"{{env_api_v2_url}}"
+									],
+									"path": [
+										"activeGates",
+										"tokenEnforcement"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "ActiveGates - Auto-update configuration",
+					"item": [
+						{
+							"name": "ActiveGate auto-update config - List",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{env_api_v2_url}}/activeGates/autoUpdate",
+									"host": [
+										"{{env_api_v2_url}}"
+									],
+									"path": [
+										"activeGates",
+										"autoUpdate"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "ActiveGate auto-update config - Specific",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{env_api_v2_url}}/activeGates/{agId}/autoUpdate",
+									"host": [
+										"{{env_api_v2_url}}"
+									],
+									"path": [
+										"activeGates",
+										"{agId}",
+										"autoUpdate"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "ActiveGates - Auto-update jobs",
+					"item": [
+						{
+							"name": "ActiveGate update jobs - List",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{env_api_v2_url}}/activeGates/updateJobs",
+									"host": [
+										"{{env_api_v2_url}}"
+									],
+									"path": [
+										"activeGates",
+										"updateJobs"
+									],
+									"query": [
+										{
+											"key": "from",
+											"value": null,
+											"disabled": true
+										},
+										{
+											"key": "to",
+											"value": null,
+											"disabled": true
+										},
+										{
+											"key": "startVersionCompareType",
+											"value": null,
+											"disabled": true
+										},
+										{
+											"key": "startVersion",
+											"value": null,
+											"disabled": true
+										},
+										{
+											"key": "updateType",
+											"value": null,
+											"disabled": true
+										},
+										{
+											"key": "targetVersionCompareType",
+											"value": null,
+											"disabled": true
+										},
+										{
+											"key": "targetVersion",
+											"value": null,
+											"disabled": true
+										},
+										{
+											"key": "lastUpdates",
+											"value": null,
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "ActiveGate update jobs - Specific",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{env_api_v2_url}}/activeGates/{agId}/updateJobs",
+									"host": [
+										"{{env_api_v2_url}}"
+									],
+									"path": [
+										"activeGates",
+										"{agId}",
+										"updateJobs"
+									],
+									"query": [
+										{
+											"key": "from",
+											"value": null,
+											"disabled": true
+										},
+										{
+											"key": "to",
+											"value": null,
+											"disabled": true
+										},
+										{
+											"key": "startVersionCompareType",
+											"value": null,
+											"disabled": true
+										},
+										{
+											"key": "startVersion",
+											"value": null,
+											"disabled": true
+										},
+										{
+											"key": "updateType",
+											"value": null,
+											"disabled": true
+										},
+										{
+											"key": "targetVersionCompareType",
+											"value": null,
+											"disabled": true
+										},
+										{
+											"key": "targetVersion",
+											"value": null,
+											"disabled": true
+										},
+										{
+											"key": "lastUpdates",
+											"value": null,
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Audit Logs",
+					"item": [
+						{
+							"name": "Audit logs - All",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{env_api_v2_url}}/auditlogs",
+									"host": [
+										"{{env_api_v2_url}}"
+									],
+									"path": [
+										"auditlogs"
+									],
+									"query": [
+										{
+											"key": "nextPageKey",
+											"value": null,
+											"disabled": true
+										},
+										{
+											"key": "pageSize",
+											"value": null,
+											"disabled": true
+										},
+										{
+											"key": "filter",
+											"value": null,
+											"disabled": true
+										},
+										{
+											"key": "from",
+											"value": null,
+											"disabled": true
+										},
+										{
+											"key": "to",
+											"value": null,
+											"disabled": true
+										},
+										{
+											"key": "sort",
+											"value": null,
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Audit logs - Specific entry",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{env_api_v2_url}}/auditlogs/{id}",
+									"host": [
+										"{{env_api_v2_url}}"
+									],
+									"path": [
+										"auditlogs",
+										"{id}"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Davis security advisor",
+					"item": [
+						{
+							"name": "Security problems advices",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{env_api_v2_url}}/davis/securityAdvices",
+									"host": [
+										"{{env_api_v2_url}}"
+									],
+									"path": [
+										"davis",
+										"securityAdvices"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Events",
+					"item": [
+						{
+							"name": "Event properties - List",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{env_api_v2_url}}/eventProperties",
+									"host": [
+										"{{env_api_v2_url}}"
+									],
+									"path": [
+										"eventProperties"
+									],
+									"query": [
+										{
+											"key": "nextPageKey",
+											"value": null,
+											"disabled": true
+										},
+										{
+											"key": "pageSize",
+											"value": null,
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Event properties - Specific",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{env_api_v2_url}}/eventProperties/{propertyKey}",
+									"host": [
+										"{{env_api_v2_url}}"
+									],
+									"path": [
+										"eventProperties",
+										"{propertyKey}"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Event types - List",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{env_api_v2_url}}/eventTypes",
+									"host": [
+										"{{env_api_v2_url}}"
+									],
+									"path": [
+										"eventTypes"
+									],
+									"query": [
+										{
+											"key": "nextPageKey",
+											"value": null,
+											"disabled": true
+										},
+										{
+											"key": "pageSize",
+											"value": null,
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Event types - Specific",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{env_api_v2_url}}/eventTypes/{eventType}",
+									"host": [
+										"{{env_api_v2_url}}"
+									],
+									"path": [
+										"eventTypes",
+										"{eventType}"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Events - List",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{env_api_v2_url}}/events",
+									"host": [
+										"{{env_api_v2_url}}"
+									],
+									"path": [
+										"events"
+									],
+									"query": [
+										{
+											"key": "nextPageKey",
+											"value": null,
+											"disabled": true
+										},
+										{
+											"key": "pageSize",
+											"value": null,
+											"disabled": true
+										},
+										{
+											"key": "from",
+											"value": null,
+											"disabled": true
+										},
+										{
+											"key": "to",
+											"value": null,
+											"disabled": true
+										},
+										{
+											"key": "eventSelector",
+											"value": null,
+											"disabled": true
+										},
+										{
+											"key": "entitySelector",
+											"value": null,
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Events - Specific",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{env_api_v2_url}}/{eventId}",
+									"host": [
+										"{{env_api_v2_url}}"
+									],
+									"path": [
+										"{eventId}"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Extensions 2.0",
+					"item": [
+						{
+							"name": "Extensions - List",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{env_api_v2_url}}/extensions",
+									"host": [
+										"{{env_api_v2_url}}"
+									],
+									"path": [
+										"extensions"
+									],
+									"query": [
+										{
+											"key": "nextPageKey",
+											"value": null,
+											"disabled": true
+										},
+										{
+											"key": "pageSize",
+											"value": null,
+											"disabled": true
+										},
+										{
+											"key": "name",
+											"value": null,
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Extension - Specific - List versions",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{env_api_v2_url}}/extensions/{extensionName}",
+									"host": [
+										"{{env_api_v2_url}}"
+									],
+									"path": [
+										"extensions",
+										"{extensionName}"
+									],
+									"query": [
+										{
+											"key": "nextPageKey",
+											"value": null,
+											"disabled": true
+										},
+										{
+											"key": "pageSize",
+											"value": null,
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Extension - Specific - Specific version",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{env_api_v2_url}}/extensions/{extensionName}/{extensionVersion}",
+									"host": [
+										"{{env_api_v2_url}}"
+									],
+									"path": [
+										"extensions",
+										"{extensionName}",
+										"{extensionVersion}"
+									],
+									"query": [
+										{
+											"key": "Accept",
+											"value": null,
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Extension - Specific - Specific version - Schema",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{env_api_v2_url}}/extensions/{extensionName}/{extensionVersion}/schema",
+									"host": [
+										"{{env_api_v2_url}}"
+									],
+									"path": [
+										"extensions",
+										"{extensionName}",
+										"{extensionVersion}",
+										"schema"
+									],
+									"query": [
+										{
+											"key": "Accept",
+											"value": null,
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Extension - Specific - Environment configuration",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{env_api_v2_url}}/extensions/{extensionName}/environmentConfiguration",
+									"host": [
+										"{{env_api_v2_url}}"
+									],
+									"path": [
+										"extensions",
+										"{extensionName}",
+										"environmentConfiguration"
+									],
+									"query": [
+										{
+											"key": "Accept",
+											"value": null,
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Extension - Specific - Environment configuration - Events",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{env_api_v2_url}}/extensions/{extensionName}/environmentConfiguration/events",
+									"host": [
+										"{{env_api_v2_url}}"
+									],
+									"path": [
+										"extensions",
+										"{extensionName}",
+										"environmentConfiguration",
+										"events"
+									],
+									"query": [
+										{
+											"key": "from",
+											"value": "",
+											"disabled": true
+										},
+										{
+											"key": "to",
+											"value": null,
+											"disabled": true
+										},
+										{
+											"key": "content",
+											"value": null,
+											"disabled": true
+										},
+										{
+											"key": "status",
+											"value": null,
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Extension - Specific - Monitoring configurations - List",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{env_api_v2_url}}/extensions/{extensionName}/monitoringConfigurations",
+									"host": [
+										"{{env_api_v2_url}}"
+									],
+									"path": [
+										"extensions",
+										"{extensionName}",
+										"monitoringConfigurations"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Extension - Specific - Monitoring configurations - Specific",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{env_api_v2_url}}/extensions/{extensionName}/monitoringConfigurations/{configurationId}",
+									"host": [
+										"{{env_api_v2_url}}"
+									],
+									"path": [
+										"extensions",
+										"{extensionName}",
+										"monitoringConfigurations",
+										"{configurationId}"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Extension - Specific - Monitoring configurations - Specific - Events",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{env_api_v2_url}}​/extensions​/{extensionName}​/monitoringConfigurations​/{configurationId}​/events",
+									"host": [
+										"{{env_api_v2_url}}​"
+									],
+									"path": [
+										"extensions​",
+										"{extensionName}​",
+										"monitoringConfigurations​",
+										"{configurationId}​",
+										"events"
+									],
+									"query": [
+										{
+											"key": "from",
+											"value": "",
+											"disabled": true
+										},
+										{
+											"key": "to",
+											"value": null,
+											"disabled": true
+										},
+										{
+											"key": "dt.entity.host",
+											"value": null,
+											"disabled": true
+										},
+										{
+											"key": "dt.active_gate.id",
+											"value": null,
+											"disabled": true
+										},
+										{
+											"key": "dt.active_gate.id",
+											"value": null,
+											"disabled": true
+										},
+										{
+											"key": "content",
+											"value": null,
+											"disabled": true
+										},
+										{
+											"key": "status",
+											"value": null,
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Extension - Specific - Monitoring configurations - Specific - Status",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{env_api_v2_url}}​/extensions​/{extensionName}​/monitoringConfigurations​/{configurationId}​/status",
+									"host": [
+										"{{env_api_v2_url}}​"
+									],
+									"path": [
+										"extensions​",
+										"{extensionName}​",
+										"monitoringConfigurations​",
+										"{configurationId}​",
+										"status"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Extensions - Schemas - List",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{env_api_v2_url}}/extensions/schemas",
+									"host": [
+										"{{env_api_v2_url}}"
+									],
+									"path": [
+										"extensions",
+										"schemas"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Extensions - Schemas - Specific version",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{env_api_v2_url}}/extensions/schemas/{schemaVersion}",
+									"host": [
+										"{{env_api_v2_url}}"
+									],
+									"path": [
+										"extensions",
+										"schemas",
+										"{schemaVersion}"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Extensions - Schemas - Specific version - File",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{env_api_v2_url}}/extensions/schemas/{schemaVersion}/{fileName}",
+									"host": [
+										"{{env_api_v2_url}}"
+									],
+									"path": [
+										"extensions",
+										"schemas",
+										"{schemaVersion}",
+										"{fileName}"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Geographic regions",
+					"item": [
+						{
+							"name": "Countries - List",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{env_api_v2_url}}/rum/countries",
+									"host": [
+										"{{env_api_v2_url}}"
+									],
+									"path": [
+										"rum",
+										"countries"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Regions - List",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{env_api_v2_url}}/rum/regions",
+									"host": [
+										"{{env_api_v2_url}}"
+									],
+									"path": [
+										"rum",
+										"regions"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Regions of a Country - List",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{env_api_v2_url}}/rum/regions/{countryCode}",
+									"host": [
+										"{{env_api_v2_url}}"
+									],
+									"path": [
+										"rum",
+										"regions",
+										"{countryCode}"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Cities of a Country - List",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{env_api_v2_url}}/rum/cities/{countryCode}",
+									"host": [
+										"{{env_api_v2_url}}"
+									],
+									"path": [
+										"rum",
+										"cities",
+										"{countryCode}"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Cities of Country's Region - List",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{env_api_v2_url}}/rum/cities/{countryCode}/{regionCode}",
+									"host": [
+										"{{env_api_v2_url}}"
+									],
+									"path": [
+										"rum",
+										"cities",
+										"{countryCode}",
+										"{regionCode}"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Logs",
+					"item": [
+						{
+							"name": "Log records - Aggregated",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{env_api_v2_url}}/logs/aggregate",
+									"host": [
+										"{{env_api_v2_url}}"
+									],
+									"path": [
+										"logs",
+										"aggregate"
+									],
+									"query": [
+										{
+											"key": "from",
+											"value": null,
+											"disabled": true
+										},
+										{
+											"key": "to",
+											"value": null,
+											"disabled": true
+										},
+										{
+											"key": "query",
+											"value": null,
+											"disabled": true
+										},
+										{
+											"key": "timeBuckets",
+											"value": null,
+											"disabled": true
+										},
+										{
+											"key": "maxGroupValues",
+											"value": null,
+											"disabled": true
+										},
+										{
+											"key": "groupBy",
+											"value": null,
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Log records - Export",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{env_api_v2_url}}/logs/export",
+									"host": [
+										"{{env_api_v2_url}}"
+									],
+									"path": [
+										"logs",
+										"export"
+									],
+									"query": [
+										{
+											"key": "from",
+											"value": null,
+											"disabled": true
+										},
+										{
+											"key": "to",
+											"value": null,
+											"disabled": true
+										},
+										{
+											"key": "nextPageKey",
+											"value": null,
+											"disabled": true
+										},
+										{
+											"key": "pageSize",
+											"value": null,
+											"disabled": true
+										},
+										{
+											"key": "query",
+											"value": null,
+											"disabled": true
+										},
+										{
+											"key": "sort",
+											"value": null,
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Log records - Read",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{env_api_v2_url}}/logs/search",
+									"host": [
+										"{{env_api_v2_url}}"
+									],
+									"path": [
+										"logs",
+										"search"
+									],
+									"query": [
+										{
+											"key": "from",
+											"value": null,
+											"disabled": true
+										},
+										{
+											"key": "to",
+											"value": null,
+											"disabled": true
+										},
+										{
+											"key": "limit",
+											"value": null,
+											"disabled": true
+										},
+										{
+											"key": "query",
+											"value": null,
+											"disabled": true
+										},
+										{
+											"key": "sort",
+											"value": null,
+											"disabled": true
+										},
+										{
+											"key": "nextSliceKey",
+											"value": null,
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Metrics",
+					"item": [
+						{
+							"name": "Metrics - List",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{env_api_v2_url}}/metrics",
+									"host": [
+										"{{env_api_v2_url}}"
+									],
+									"path": [
+										"metrics"
+									],
+									"query": [
+										{
+											"key": "nextPageKey",
+											"value": null,
+											"disabled": true
+										},
+										{
+											"key": "pageSize",
+											"value": null,
+											"disabled": true
+										},
+										{
+											"key": "metricSelector",
+											"value": null,
+											"disabled": true
+										},
+										{
+											"key": "text",
+											"value": null,
+											"disabled": true
+										},
+										{
+											"key": "fields",
+											"value": null,
+											"disabled": true
+										},
+										{
+											"key": "writtenSince",
+											"value": null,
+											"disabled": true
+										},
+										{
+											"key": "metadataSelector",
+											"value": null,
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Metric - Specific",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{env_api_v2_url}}/metrics/{metricKey}",
+									"host": [
+										"{{env_api_v2_url}}"
+									],
+									"path": [
+										"metrics",
+										"{metricKey}"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Metric - Query data points",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{env_api_v2_url}}/metrics/query?metricSelector&resolution&from&to&entitySelector&mzSelector",
+									"host": [
+										"{{env_api_v2_url}}"
+									],
+									"path": [
+										"metrics",
+										"query"
+									],
+									"query": [
+										{
+											"key": "metricSelector",
+											"value": null
+										},
+										{
+											"key": "resolution",
+											"value": null
+										},
+										{
+											"key": "from",
+											"value": null
+										},
+										{
+											"key": "to",
+											"value": null
+										},
+										{
+											"key": "entitySelector",
+											"value": null
+										},
+										{
+											"key": "mzSelector",
+											"value": null
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Metrics - Units",
+					"item": [
+						{
+							"name": "Units - List",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{env_api_v2_url}}/units",
+									"host": [
+										"{{env_api_v2_url}}"
+									],
+									"path": [
+										"units"
+									],
+									"query": [
+										{
+											"key": "unitSelector",
+											"value": null,
+											"disabled": true
+										},
+										{
+											"key": "fields",
+											"value": null,
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Unit - Specific",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{env_api_v2_url}}/units/{unitId}",
+									"host": [
+										"{{env_api_v2_url}}"
+									],
+									"path": [
+										"units",
+										"{unitId}"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Unit - Covert value",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{env_api_v2_url}}/units/{unitId}/convert?value",
+									"host": [
+										"{{env_api_v2_url}}"
+									],
+									"path": [
+										"units",
+										"{unitId}",
+										"convert"
+									],
+									"query": [
+										{
+											"key": "value",
+											"value": null
+										},
+										{
+											"key": "targetUnit",
+											"value": null,
+											"disabled": true
+										},
+										{
+											"key": "numberFormat",
+											"value": null,
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Monitored entities",
+					"item": [
+						{
+							"name": "Entities - List",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{env_api_v2_url}}/entities",
+									"host": [
+										"{{env_api_v2_url}}"
+									],
+									"path": [
+										"entities"
+									],
+									"query": [
+										{
+											"key": "nextPageKey",
+											"value": null,
+											"disabled": true
+										},
+										{
+											"key": "pageSize",
+											"value": null,
+											"disabled": true
+										},
+										{
+											"key": "entitySelector",
+											"value": null,
+											"disabled": true
+										},
+										{
+											"key": "from",
+											"value": null,
+											"disabled": true
+										},
+										{
+											"key": "to",
+											"value": null,
+											"disabled": true
+										},
+										{
+											"key": "fields",
+											"value": null,
+											"disabled": true
+										},
+										{
+											"key": "sort",
+											"value": null,
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Entity - Specific",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{env_api_v2_url}}/entities/{entityId}",
+									"host": [
+										"{{env_api_v2_url}}"
+									],
+									"path": [
+										"entities",
+										"{entityId}"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Entity types - List",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{env_api_v2_url}}/entityTypes",
+									"host": [
+										"{{env_api_v2_url}}"
+									],
+									"path": [
+										"entityTypes"
+									],
+									"query": [
+										{
+											"key": "nextPageKey",
+											"value": null,
+											"disabled": true
+										},
+										{
+											"key": "pageSize",
+											"value": null,
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Entity type - Specific",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{env_api_v2_url}}/entityTypes/{type}",
+									"host": [
+										"{{env_api_v2_url}}"
+									],
+									"path": [
+										"entityTypes",
+										"{type}"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Monitored entities - Custom tags",
+					"item": [
+						{
+							"name": "Custom tags - List",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{env_api_v2_url}}/tags?entitySelector",
+									"host": [
+										"{{env_api_v2_url}}"
+									],
+									"path": [
+										"tags"
+									],
+									"query": [
+										{
+											"key": "entitySelector",
+											"value": null
+										},
+										{
+											"key": "from",
+											"value": null,
+											"disabled": true
+										},
+										{
+											"key": "to",
+											"value": null,
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Network zones",
+					"item": [
+						{
+							"name": "Network zones - List",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{env_api_v2_url}}/networkZones",
+									"host": [
+										"{{env_api_v2_url}}"
+									],
+									"path": [
+										"networkZones"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Network zone - Specific",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{env_api_v2_url}}/networkZones/{id}",
+									"host": [
+										"{{env_api_v2_url}}"
+									],
+									"path": [
+										"networkZones",
+										"{id}"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Network zone - Specific - Host connections",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{env_api_v2_url}}/networkZones/{id}/hostConnectionStatistics",
+									"host": [
+										"{{env_api_v2_url}}"
+									],
+									"path": [
+										"networkZones",
+										"{id}",
+										"hostConnectionStatistics"
+									],
+									"query": [
+										{
+											"key": "filter",
+											"value": null,
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Network zone - Global configuration",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{env_api_v2_url}}/networkZoneSettings",
+									"host": [
+										"{{env_api_v2_url}}"
+									],
+									"path": [
+										"networkZoneSettings"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Problems",
+					"item": [
+						{
+							"name": "Problems - List",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{env_api_v2_url}}/problems",
+									"host": [
+										"{{env_api_v2_url}}"
+									],
+									"path": [
+										"problems"
+									],
+									"query": [
+										{
+											"key": "fields",
+											"value": null,
+											"disabled": true
+										},
+										{
+											"key": "nextPageKey",
+											"value": null,
+											"disabled": true
+										},
+										{
+											"key": "pageSize",
+											"value": null,
+											"disabled": true
+										},
+										{
+											"key": "from",
+											"value": null,
+											"disabled": true
+										},
+										{
+											"key": "to",
+											"value": null,
+											"disabled": true
+										},
+										{
+											"key": "problemSelector",
+											"value": null,
+											"disabled": true
+										},
+										{
+											"key": "entitySelector",
+											"value": null,
+											"disabled": true
+										},
+										{
+											"key": "sort",
+											"value": null,
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Problem - Specific",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{env_api_v2_url}}/problems/{problemId}",
+									"host": [
+										"{{env_api_v2_url}}"
+									],
+									"path": [
+										"problems",
+										"{problemId}"
+									],
+									"query": [
+										{
+											"key": "fields",
+											"value": null,
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Problem - Specific - Comments",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{env_api_v2_url}}/problems/{problemId}/comments",
+									"host": [
+										"{{env_api_v2_url}}"
+									],
+									"path": [
+										"problems",
+										"{problemId}",
+										"comments"
+									],
+									"query": [
+										{
+											"key": "nextPageKey",
+											"value": "",
+											"disabled": true
+										},
+										{
+											"key": "pageSize",
+											"value": null,
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Problem - Specific - Comment - Specific",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{env_api_v2_url}}/problems/{problemId}/comments/{commentId}",
+									"host": [
+										"{{env_api_v2_url}}"
+									],
+									"path": [
+										"problems",
+										"{problemId}",
+										"comments",
+										"{commentId}"
+									],
+									"query": [
+										{
+											"key": "nextPageKey",
+											"value": "",
+											"disabled": true
+										},
+										{
+											"key": "pageSize",
+											"value": null,
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Releases",
+					"item": [
+						{
+							"name": "Releases - List",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{env_api_v2_url}}/releases",
+									"host": [
+										"{{env_api_v2_url}}"
+									],
+									"path": [
+										"releases"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Security Problems",
+					"item": [
+						{
+							"name": "Security problems - List",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{env_api_v2_url}}/securityProblems",
+									"host": [
+										"{{env_api_v2_url}}"
+									],
+									"path": [
+										"securityProblems"
+									],
+									"query": [
+										{
+											"key": "nextPageKey",
+											"value": null,
+											"disabled": true
+										},
+										{
+											"key": "pageSize",
+											"value": null,
+											"disabled": true
+										},
+										{
+											"key": "securityProblemSelector",
+											"value": null,
+											"disabled": true
+										},
+										{
+											"key": "sort",
+											"value": null,
+											"disabled": true
+										},
+										{
+											"key": "fields",
+											"value": null,
+											"disabled": true
+										},
+										{
+											"key": "from",
+											"value": null,
+											"disabled": true
+										},
+										{
+											"key": "to",
+											"value": null,
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Security problem - Specific",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{env_api_v2_url}}/securityProblems/{id}",
+									"host": [
+										"{{env_api_v2_url}}"
+									],
+									"path": [
+										"securityProblems",
+										"{id}"
+									],
+									"query": [
+										{
+											"key": "fields",
+											"value": null,
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Security problem - Specific - Remediation items",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{env_api_v2_url}}/securityProblems/{id}/remediationItems",
+									"host": [
+										"{{env_api_v2_url}}"
+									],
+									"path": [
+										"securityProblems",
+										"{id}",
+										"remediationItems"
+									],
+									"query": [
+										{
+											"key": "remediationItemSelector",
+											"value": null,
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Security problem - Specific - Vulnerable functions - List",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{env_api_v2_url}}/securityProblems/{id}/vulnerableFunctions",
+									"host": [
+										"{{env_api_v2_url}}"
+									],
+									"path": [
+										"securityProblems",
+										"{id}",
+										"vulnerableFunctions"
+									],
+									"query": [
+										{
+											"key": "vulnerableFunctionsSelector",
+											"value": null,
+											"disabled": true
+										},
+										{
+											"key": "groupBy",
+											"value": null,
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Service-level objectives",
+					"item": [
+						{
+							"name": "SLOs - List",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{env_api_v2_url}}/slo",
+									"host": [
+										"{{env_api_v2_url}}"
+									],
+									"path": [
+										"slo"
+									],
+									"query": [
+										{
+											"key": "nextPageKey",
+											"value": null,
+											"disabled": true
+										},
+										{
+											"key": "pageSize",
+											"value": null,
+											"disabled": true
+										},
+										{
+											"key": "from",
+											"value": null,
+											"disabled": true
+										},
+										{
+											"key": "to",
+											"value": null,
+											"disabled": true
+										},
+										{
+											"key": "sloSelector",
+											"value": null,
+											"disabled": true
+										},
+										{
+											"key": "sort",
+											"value": null,
+											"disabled": true
+										},
+										{
+											"key": "timeFrame",
+											"value": null,
+											"disabled": true
+										},
+										{
+											"key": "demo",
+											"value": null,
+											"disabled": true
+										},
+										{
+											"key": "evaluate",
+											"value": null,
+											"disabled": true
+										},
+										{
+											"key": "enabledSlos",
+											"value": null,
+											"disabled": true
+										},
+										{
+											"key": "showGlobalSlos",
+											"value": null,
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "SLO - Specific",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{env_api_v2_url}}/{id}",
+									"host": [
+										"{{env_api_v2_url}}"
+									],
+									"path": [
+										"{id}"
+									],
+									"query": [
+										{
+											"key": "from",
+											"value": null,
+											"disabled": true
+										},
+										{
+											"key": "to",
+											"value": null,
+											"disabled": true
+										},
+										{
+											"key": "timeFrame",
+											"value": null,
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Settings - Objects",
+					"item": [
+						{
+							"name": "Effective values - List",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{env_api_v2_url}}/settings/effectiveValues",
+									"host": [
+										"{{env_api_v2_url}}"
+									],
+									"path": [
+										"settings",
+										"effectiveValues"
+									],
+									"query": [
+										{
+											"key": "schemaIds",
+											"value": null,
+											"disabled": true
+										},
+										{
+											"key": "scope",
+											"value": null,
+											"disabled": true
+										},
+										{
+											"key": "fields",
+											"value": null,
+											"disabled": true
+										},
+										{
+											"key": "nextPageKey",
+											"value": null,
+											"disabled": true
+										},
+										{
+											"key": "pageSize",
+											"value": null,
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Settings objects - List",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{env_api_v2_url}}/settings/objects",
+									"host": [
+										"{{env_api_v2_url}}"
+									],
+									"path": [
+										"settings",
+										"objects"
+									],
+									"query": [
+										{
+											"key": "schemaIds",
+											"value": null,
+											"disabled": true
+										},
+										{
+											"key": "scopes",
+											"value": null,
+											"disabled": true
+										},
+										{
+											"key": "fields",
+											"value": null,
+											"disabled": true
+										},
+										{
+											"key": "nextPageKey",
+											"value": null,
+											"disabled": true
+										},
+										{
+											"key": "pageSize",
+											"value": null,
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Settings object - Specific",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{env_api_v2_url}}/settings/objects/{objectId}",
+									"host": [
+										"{{env_api_v2_url}}"
+									],
+									"path": [
+										"settings",
+										"objects",
+										"{objectId}"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Settings - Schemas",
+					"item": [
+						{
+							"name": "Settings schemas - List",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{env_api_v2_url}}/settings/schemas",
+									"host": [
+										"{{env_api_v2_url}}"
+									],
+									"path": [
+										"settings",
+										"schemas"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Settings schema - Specific",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{env_api_v2_url}}/settings/schemas/{schemaId}",
+									"host": [
+										"{{env_api_v2_url}}"
+									],
+									"path": [
+										"settings",
+										"schemas",
+										"{schemaId}"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Synthetic - HTTP monitor executions",
+					"item": [
+						{
+							"name": "Last execution details - Specific HTTP monitor",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{env_api_v2_url}}/synthetic/execution/{monitorId}/{resultType}",
+									"host": [
+										"{{env_api_v2_url}}"
+									],
+									"path": [
+										"synthetic",
+										"execution",
+										"{monitorId}",
+										"{resultType}"
+									],
+									"query": [
+										{
+											"key": "locationId",
+											"value": null,
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Synthetic - Locations, nodes, and configuration",
+					"item": [
+						{
+							"name": "Synthetic config",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{env_api_v2_url}}/synthetic/config",
+									"host": [
+										"{{env_api_v2_url}}"
+									],
+									"path": [
+										"synthetic",
+										"config"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Synthetic locations - List",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{env_api_v2_url}}/synthetic/locations",
+									"host": [
+										"{{env_api_v2_url}}"
+									],
+									"path": [
+										"synthetic",
+										"locations"
+									],
+									"query": [
+										{
+											"key": "cloudPlatform",
+											"value": null,
+											"disabled": true
+										},
+										{
+											"key": "type",
+											"value": null,
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Synthetic location - Specific",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{env_api_v2_url}}/synthetic/locations/{locationId}",
+									"host": [
+										"{{env_api_v2_url}}"
+									],
+									"path": [
+										"synthetic",
+										"locations",
+										"{locationId}"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Synthetic location - Public - Status",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{env_api_v2_url}}/synthetic/locations/status",
+									"host": [
+										"{{env_api_v2_url}}"
+									],
+									"path": [
+										"synthetic",
+										"locations",
+										"status"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Synthetic nodes - Private - List",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{env_api_v2_url}}/synthetic/nodes",
+									"host": [
+										"{{env_api_v2_url}}"
+									],
+									"path": [
+										"synthetic",
+										"nodes"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Synthetic nodes - Private - Specific",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{env_api_v2_url}}/synthetic/nodes/{nodeId}",
+									"host": [
+										"{{env_api_v2_url}}"
+									],
+									"path": [
+										"synthetic",
+										"nodes",
+										"{nodeId}"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Synthetic - On-demand monitor executions",
+					"item": [
+						{
+							"name": "On-demand executions - Browser monitor - List",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{env_api_v2_url}}/synthetic/executions",
+									"host": [
+										"{{env_api_v2_url}}"
+									],
+									"path": [
+										"synthetic",
+										"executions"
+									],
+									"query": [
+										{
+											"key": "executionStage",
+											"value": null,
+											"disabled": true
+										},
+										{
+											"key": "schedulingFrom",
+											"value": null,
+											"disabled": true
+										},
+										{
+											"key": "schedulingTo",
+											"value": null,
+											"disabled": true
+										},
+										{
+											"key": "executionFrom",
+											"value": null,
+											"disabled": true
+										},
+										{
+											"key": "executionTo",
+											"value": null,
+											"disabled": true
+										},
+										{
+											"key": "dataDeliveryFrom",
+											"value": null,
+											"disabled": true
+										},
+										{
+											"key": "dataDeliveryTo",
+											"value": null,
+											"disabled": true
+										},
+										{
+											"key": "batchId",
+											"value": null,
+											"disabled": true
+										},
+										{
+											"key": "monitorId",
+											"value": null,
+											"disabled": true
+										},
+										{
+											"key": "locationId",
+											"value": null,
+											"disabled": true
+										},
+										{
+											"key": "userId",
+											"value": null,
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "On-demand execution - Browser monitor - Specific",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{env_api_v2_url}}/synthetic/executions/{executionId}",
+									"host": [
+										"{{env_api_v2_url}}"
+									],
+									"path": [
+										"synthetic",
+										"executions",
+										"{executionId}"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "On-demand execution - Browser monitor - Specific - Report",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{env_api_v2_url}}/synthetic/executions/{executionId}/fullReport",
+									"host": [
+										"{{env_api_v2_url}}"
+									],
+									"path": [
+										"synthetic",
+										"executions",
+										"{executionId}",
+										"fullReport"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "On-demand exection - Browser monitor - Summary information - Batch",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{env_api_v2_url}}/synthetic/executions/batch/{batchId}",
+									"host": [
+										"{{env_api_v2_url}}"
+									],
+									"path": [
+										"synthetic",
+										"executions",
+										"batch",
+										"{batchId}"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Configuration API",
+			"item": [
+				{
+					"name": "Anomaly detection - Applications",
+					"item": [
+						{
+							"name": "Application - Anomaly detection configurations",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{config_api_v1_url}}/anomalyDetection/applications",
+									"host": [
+										"{{config_api_v1_url}}"
+									],
+									"path": [
+										"anomalyDetection",
+										"applications"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Anomaly detection - AWS",
+					"item": [
+						{
+							"name": "AWS - Anomaly detection configuration",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{config_api_v1_url}}/anomalyDetection/aws",
+									"host": [
+										"{{config_api_v1_url}}"
+									],
+									"path": [
+										"anomalyDetection",
+										"aws"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Anomaly detection - Database services",
+					"item": [
+						{
+							"name": "Database - Anomaly detection configuration",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{config_api_v1_url}}/anomalyDetection/databaseServices",
+									"host": [
+										"{{config_api_v1_url}}"
+									],
+									"path": [
+										"anomalyDetection",
+										"databaseServices"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Anomaly detection - Disk events",
+					"item": [
+						{
+							"name": "Disk - Anomaly detection configuration - All",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{config_api_v1_url}}/anomalyDetection/diskEvents",
+									"host": [
+										"{{config_api_v1_url}}"
+									],
+									"path": [
+										"anomalyDetection",
+										"diskEvents"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Disk - Anomaly detection configuration - Specific",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{config_api_v1_url}}/anomalyDetection/diskEvents/{id}",
+									"host": [
+										"{{config_api_v1_url}}"
+									],
+									"path": [
+										"anomalyDetection",
+										"diskEvents",
+										"{id}"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Anomaly detection - Hosts",
+					"item": [
+						{
+							"name": "Hosts - Anomaly detection configuration",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{config_api_v1_url}}/anomalyDetection/hosts",
+									"host": [
+										"{{config_api_v1_url}}"
+									],
+									"path": [
+										"anomalyDetection",
+										"hosts"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Anomaly detection - Metric events",
+					"item": [
+						{
+							"name": "Metric Events - Configuration - List",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{config_api_v1_url}}/anomalyDetection/metricEvents",
+									"host": [
+										"{{config_api_v1_url}}"
+									],
+									"path": [
+										"anomalyDetection",
+										"metricEvents"
+									],
+									"query": [
+										{
+											"key": "includeEntityFilterMetricEvents",
+											"value": null,
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Metric Events - Configuration - Specific",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{config_api_v1_url}}/anomalyDetection/metricEvents/{id}",
+									"host": [
+										"{{config_api_v1_url}}"
+									],
+									"path": [
+										"anomalyDetection",
+										"metricEvents",
+										"{id}"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Anomaly detection - Process groups",
+					"item": [
+						{
+							"name": "Process groups - Anomaly detection configuration - Specific",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{config_api_v1_url}}/anomalyDetection/processGroups/{id}",
+									"host": [
+										"{{config_api_v1_url}}"
+									],
+									"path": [
+										"anomalyDetection",
+										"processGroups",
+										"{id}"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Anomaly detection - Services",
+					"item": [
+						{
+							"name": "Services - Anomaly detection configuration",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{config_api_v1_url}}/anomalyDetection/services",
+									"host": [
+										"{{config_api_v1_url}}"
+									],
+									"path": [
+										"anomalyDetection",
+										"services"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Anomaly detection - VMware",
+					"item": [
+						{
+							"name": "VMware - Anomaly detection configuration",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{config_api_v1_url}}/anomalyDetection/vmware",
+									"host": [
+										"{{config_api_v1_url}}"
+									],
+									"path": [
+										"anomalyDetection",
+										"vmware"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Automatically applied tags",
+					"item": [
+						{
+							"name": "Auto tags - List",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{config_api_v1_url}}/autoTags",
+									"host": [
+										"{{config_api_v1_url}}"
+									],
+									"path": [
+										"autoTags"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Auto tag - Specific",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{config_api_v1_url}}/autoTags/{id}",
+									"host": [
+										"{{config_api_v1_url}}"
+									],
+									"path": [
+										"autoTags",
+										"{id}"
+									],
+									"query": [
+										{
+											"key": "includeProcessGroupReferences",
+											"value": null,
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "AWS credentials configuration",
+					"item": [
+						{
+							"name": "AWS credetials - List",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{config_api_v1_url}}/aws/credentials",
+									"host": [
+										"{{config_api_v1_url}}"
+									],
+									"path": [
+										"aws",
+										"credentials"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "AWS credetial - Specific",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{config_api_v1_url}}/aws/credentials/{id}",
+									"host": [
+										"{{config_api_v1_url}}"
+									],
+									"path": [
+										"aws",
+										"credentials",
+										"{id}"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "AWS credetial - Specific - Monitored services configuration",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{config_api_v1_url}}/aws/credentials/{id}/services",
+									"host": [
+										"{{config_api_v1_url}}"
+									],
+									"path": [
+										"aws",
+										"credentials",
+										"{id}",
+										"services"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "AWS - External Id token - IAM",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{config_api_v1_url}}/aws/iamExternalId",
+									"host": [
+										"{{config_api_v1_url}}"
+									],
+									"path": [
+										"aws",
+										"iamExternalId"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "AWS - Supported services - List",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{config_api_v1_url}}/aws/supportedServices",
+									"host": [
+										"{{config_api_v1_url}}"
+									],
+									"path": [
+										"aws",
+										"supportedServices"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "AWS PrivateLink",
+					"item": [
+						{
+							"name": "AWS PrivateLink - Configuration",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{config_api_v1_url}}/aws/privateLink",
+									"host": [
+										"{{config_api_v1_url}}"
+									],
+									"path": [
+										"aws",
+										"privateLink"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "AWS PrivateLink - Allowlisted accounts",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{config_api_v1_url}}/aws/privateLink/allowlistedAccounts",
+									"host": [
+										"{{config_api_v1_url}}"
+									],
+									"path": [
+										"aws",
+										"privateLink",
+										"allowlistedAccounts"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Azure credentials configuration",
+					"item": [
+						{
+							"name": "Azure - Credential configurations - List",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{config_api_v1_url}}/azure/credentials",
+									"host": [
+										"{{config_api_v1_url}}"
+									],
+									"path": [
+										"azure",
+										"credentials"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Azure - Credential configuration - Specific",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{config_api_v1_url}}/azure/credentials/{id}",
+									"host": [
+										"{{config_api_v1_url}}"
+									],
+									"path": [
+										"azure",
+										"credentials",
+										"{id}"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Azure - Credential configuration - Specific - Monitored services",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{config_api_v1_url}}/azure/credentials/{id}/services",
+									"host": [
+										"{{config_api_v1_url}}"
+									],
+									"path": [
+										"azure",
+										"credentials",
+										"{id}",
+										"services"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Azure - Supported services",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{config_api_v1_url}}/azure/supportedServices",
+									"host": [
+										"{{config_api_v1_url}}"
+									],
+									"path": [
+										"azure",
+										"supportedServices"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Calculated metrics - Mobile & custom applications",
+					"item": [
+						{
+							"name": "Mobile - Calculated metrics - List",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{config_api_v1_url}}/calculatedMetrics/mobile",
+									"host": [
+										"{{config_api_v1_url}}"
+									],
+									"path": [
+										"calculatedMetrics",
+										"mobile"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Mobile - Calculated metric - Specific",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{config_api_v1_url}}/calculatedMetrics/mobile/{metricKey}",
+									"host": [
+										"{{config_api_v1_url}}"
+									],
+									"path": [
+										"calculatedMetrics",
+										"mobile",
+										"{metricKey}"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Calculated metrics - Services",
+					"item": [
+						{
+							"name": "Services - Calculated metrics - List",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{config_api_v1_url}}/calculatedMetrics/service",
+									"host": [
+										"{{config_api_v1_url}}"
+									],
+									"path": [
+										"calculatedMetrics",
+										"service"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Services - Calculated metric - Specific",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{config_api_v1_url}}/calculatedMetrics/service/{metricKey}",
+									"host": [
+										"{{config_api_v1_url}}"
+									],
+									"path": [
+										"calculatedMetrics",
+										"service",
+										"{metricKey}"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Calculated metrics - Synthetic",
+					"item": [
+						{
+							"name": "Synthetic - Calculated metrics - List",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{config_api_v1_url}}/calculatedMetrics/synthetic",
+									"host": [
+										"{{config_api_v1_url}}"
+									],
+									"path": [
+										"calculatedMetrics",
+										"synthetic"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Synthetic - Calculated metric - Specific",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{config_api_v1_url}}/calculatedMetrics/synthetic/{metricKey}",
+									"host": [
+										"{{config_api_v1_url}}"
+									],
+									"path": [
+										"calculatedMetrics",
+										"synthetic",
+										"{metricKey}"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Calculated metrics - Web applications",
+					"item": [
+						{
+							"name": "Web application - Calculated metrics - List",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{config_api_v1_url}}/calculatedMetrics/rum",
+									"host": [
+										"{{config_api_v1_url}}"
+									],
+									"path": [
+										"calculatedMetrics",
+										"rum"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Web application - Calculated metric - Specific",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{config_api_v1_url}}/calculatedMetrics/rum/{metricKey}",
+									"host": [
+										"{{config_api_v1_url}}"
+									],
+									"path": [
+										"calculatedMetrics",
+										"rum",
+										"{metricKey}"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Conditional naming",
+					"item": [
+						{
+							"name": "Conditonal namings - Type - List",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{config_api_v1_url}}/conditionalNaming/{type}",
+									"host": [
+										"{{config_api_v1_url}}"
+									],
+									"path": [
+										"conditionalNaming",
+										"{type}"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Conditonal naming - Type - Specific",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{config_api_v1_url}}/conditionalNaming/{type}/{id}",
+									"host": [
+										"{{config_api_v1_url}}"
+									],
+									"path": [
+										"conditionalNaming",
+										"{type}",
+										"{id}"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Credential vault",
+					"item": [
+						{
+							"name": "Credentials - List",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{config_api_v1_url}}/credentials",
+									"host": [
+										"{{config_api_v1_url}}"
+									],
+									"path": [
+										"credentials"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Credential - Specific",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{config_api_v1_url}}/credentials/{id}",
+									"host": [
+										"{{config_api_v1_url}}"
+									],
+									"path": [
+										"credentials",
+										"{id}"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Dashboards",
+					"item": [
+						{
+							"name": "Dashboards - List",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{config_api_v1_url}}/dashboards",
+									"host": [
+										"{{config_api_v1_url}}"
+									],
+									"path": [
+										"dashboards"
+									],
+									"query": [
+										{
+											"key": "owner",
+											"value": null,
+											"disabled": true
+										},
+										{
+											"key": "tags",
+											"value": null,
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Dashboards - Specific",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{config_api_v1_url}}/dashboards/{id}",
+									"host": [
+										"{{config_api_v1_url}}"
+									],
+									"path": [
+										"dashboards",
+										"{id}"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Dashboards - Specific - Share settings",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{config_api_v1_url}}/dashboards/{id}/shareSettings",
+									"host": [
+										"{{config_api_v1_url}}"
+									],
+									"path": [
+										"dashboards",
+										"{id}",
+										"shareSettings"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Data privacy and security",
+					"item": [
+						{
+							"name": "Data privacy and security settings - List",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{config_api_v1_url}}/dataPrivacy",
+									"host": [
+										"{{config_api_v1_url}}"
+									],
+									"path": [
+										"dataPrivacy"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Extensions 1.0",
+					"item": [
+						{
+							"name": "Extensions - List",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{config_api_v1_url}}/extensions",
+									"host": [
+										"{{config_api_v1_url}}"
+									],
+									"path": [
+										"extensions"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Extension - Specific",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{config_api_v1_url}}/extensions/{id}",
+									"host": [
+										"{{config_api_v1_url}}"
+									],
+									"path": [
+										"extensions",
+										"{id}"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Extension - Specific - Download",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{config_api_v1_url}}/extensions/{id}/binary",
+									"host": [
+										"{{config_api_v1_url}}"
+									],
+									"path": [
+										"extensions",
+										"{id}",
+										"binary"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Extension - Specific - Gloabl config - OneAgent/JMX",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{config_api_v1_url}}/extensions/{id}/global",
+									"host": [
+										"{{config_api_v1_url}}"
+									],
+									"path": [
+										"extensions",
+										"{id}",
+										"global"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Extension - Specific - Instances",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{config_api_v1_url}}/extensions/{id}/instances",
+									"host": [
+										"{{config_api_v1_url}}"
+									],
+									"path": [
+										"extensions",
+										"{id}",
+										"instances"
+									],
+									"query": [
+										{
+											"key": "pageSize",
+											"value": null,
+											"disabled": true
+										},
+										{
+											"key": "nextPageKey",
+											"value": null,
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Extension - Specific - Instance - Config",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{config_api_v1_url}}/extensions/{id}/instances/{configurationId}",
+									"host": [
+										"{{config_api_v1_url}}"
+									],
+									"path": [
+										"extensions",
+										"{id}",
+										"instances",
+										"{configurationId}"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Extension - Specific - States",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{config_api_v1_url}}/extensions/{id}/states",
+									"host": [
+										"{{config_api_v1_url}}"
+									],
+									"path": [
+										"extensions",
+										"{id}",
+										"states"
+									],
+									"query": [
+										{
+											"key": "pageSize",
+											"value": "",
+											"disabled": true
+										},
+										{
+											"key": "nextPageKey",
+											"value": "",
+											"disabled": true
+										},
+										{
+											"key": "state",
+											"value": null,
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Extension - Host with specified technology",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{config_api_v1_url}}/extensions/{technology}/availableHosts",
+									"host": [
+										"{{config_api_v1_url}}"
+									],
+									"path": [
+										"extensions",
+										"{technology}",
+										"availableHosts"
+									],
+									"query": [
+										{
+											"key": "tag",
+											"value": "",
+											"disabled": true
+										},
+										{
+											"key": "managementZone",
+											"value": "",
+											"disabled": true
+										},
+										{
+											"key": "hostGroupId",
+											"value": null,
+											"disabled": true
+										},
+										{
+											"key": "hostGroupName",
+											"value": null,
+											"disabled": true
+										},
+										{
+											"key": "pageSize",
+											"value": null,
+											"disabled": true
+										},
+										{
+											"key": "nextPageKey",
+											"value": null,
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "ActiveGate extension modules - List",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{config_api_v1_url}}​/extensions​/activeGateExtensionModules",
+									"host": [
+										"{{config_api_v1_url}}​"
+									],
+									"path": [
+										"extensions​",
+										"activeGateExtensionModules"
+									],
+									"query": [
+										{
+											"key": "tag",
+											"value": "",
+											"disabled": true
+										},
+										{
+											"key": "managementZone",
+											"value": "",
+											"disabled": true
+										},
+										{
+											"key": "hostGroupId",
+											"value": null,
+											"disabled": true
+										},
+										{
+											"key": "hostGroupName",
+											"value": null,
+											"disabled": true
+										},
+										{
+											"key": "pageSize",
+											"value": null,
+											"disabled": true
+										},
+										{
+											"key": "nextPageKey",
+											"value": null,
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Management zones",
+					"item": [
+						{
+							"name": "Management zones - List",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{config_api_v1_url}}/managementZones",
+									"host": [
+										"{{config_api_v1_url}}"
+									],
+									"path": [
+										"managementZones"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Management zone - Specific",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{config_api_v1_url}}/managementZones/{id}",
+									"host": [
+										"{{config_api_v1_url}}"
+									],
+									"path": [
+										"managementZones",
+										"{id}"
+									],
+									"query": [
+										{
+											"key": "includeProcessGroupReferences",
+											"value": null,
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "OneAgent - Environment-wide configuration",
+					"item": [
+						{
+							"name": "OneAgent auto-update config",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{config_api_v1_url}}/hosts/autoupdate",
+									"host": [
+										"{{config_api_v1_url}}"
+									],
+									"path": [
+										"hosts",
+										"autoupdate"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Technologies - Global monitoring config",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{config_api_v1_url}}/technologies",
+									"host": [
+										"{{config_api_v1_url}}"
+									],
+									"path": [
+										"technologies"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "OneAgent in a host group",
+					"item": [
+						{
+							"name": "OneAgent config - Specific host group",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{config_api_v1_url}}/hostgroups/{id}",
+									"host": [
+										"{{config_api_v1_url}}"
+									],
+									"path": [
+										"hostgroups",
+										"{id}"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "OneAgent auto-update config - Specific host group",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{config_api_v1_url}}/hostgroups/{id}/autoupdate",
+									"host": [
+										"{{config_api_v1_url}}"
+									],
+									"path": [
+										"hostgroups",
+										"{id}",
+										"autoupdate"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "OneAgent on a host",
+					"item": [
+						{
+							"name": "OneAgent configuration - Specific host",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{config_api_v1_url}}/hosts/{id}",
+									"host": [
+										"{{config_api_v1_url}}"
+									],
+									"path": [
+										"hosts",
+										"{id}"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "OneAgent auto-update configuration - Specific host",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{config_api_v1_url}}/hosts/{id}/autoupdate",
+									"host": [
+										"{{config_api_v1_url}}"
+									],
+									"path": [
+										"hosts",
+										"{id}",
+										"autoupdate"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "RUM - Application detection rules",
+					"item": [
+						{
+							"name": "Application detection rules - List",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{config_api_v1_url}}/applicationDetectionRules",
+									"host": [
+										"{{config_api_v1_url}}"
+									],
+									"path": [
+										"applicationDetectionRules"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Application detection rule - Specific",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{config_api_v1_url}}/applicationDetectionRules/{id}",
+									"host": [
+										"{{config_api_v1_url}}"
+									],
+									"path": [
+										"applicationDetectionRules",
+										"{id}"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "RUM - Web application configuration",
+					"item": [
+						{
+							"name": "Web applications - List",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{config_api_v1_url}}/applications/web",
+									"host": [
+										"{{config_api_v1_url}}"
+									],
+									"path": [
+										"applications",
+										"web"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Web application - Specific",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{config_api_v1_url}}/applications/web/{id}",
+									"host": [
+										"{{config_api_v1_url}}"
+									],
+									"path": [
+										"applications",
+										"web",
+										"{id}"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Web application - Specific - Data privacy",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{config_api_v1_url}}/applications/web/{id}/dataPrivacy",
+									"host": [
+										"{{config_api_v1_url}}"
+									],
+									"path": [
+										"applications",
+										"web",
+										"{id}",
+										"dataPrivacy"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Web application - Specific - Error rules",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{config_api_v1_url}}/applications/web/{id}/errorRules",
+									"host": [
+										"{{config_api_v1_url}}"
+									],
+									"path": [
+										"applications",
+										"web",
+										"{id}",
+										"errorRules"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Web application - Specific - Key user actions",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{config_api_v1_url}}/applications/web/{id}/keyUserActions",
+									"host": [
+										"{{config_api_v1_url}}"
+									],
+									"path": [
+										"applications",
+										"web",
+										"{id}",
+										"keyUserActions"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Web applications - Data Privacy",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{config_api_v1_url}}/applications/web/dataPrivacy",
+									"host": [
+										"{{config_api_v1_url}}"
+									],
+									"path": [
+										"applications",
+										"web",
+										"dataPrivacy"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Default Web application - Configuration",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{config_api_v1_url}}/applications/web/default",
+									"host": [
+										"{{config_api_v1_url}}"
+									],
+									"path": [
+										"applications",
+										"web",
+										"default"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Default Web application - Data Privacy",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{config_api_v1_url}}/applications/web/default/dataPrivacy",
+									"host": [
+										"{{config_api_v1_url}}"
+									],
+									"path": [
+										"applications",
+										"web",
+										"default",
+										"dataPrivacy"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Service - Custom services",
+					"item": [
+						{
+							"name": "Custom services - List",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{config_api_v1_url}}/service/customServices/{technology}",
+									"host": [
+										"{{config_api_v1_url}}"
+									],
+									"path": [
+										"service",
+										"customServices",
+										"{technology}"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Custom service definition - Specific",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{config_api_v1_url}}/service/customServices/{technology}/{id}",
+									"host": [
+										"{{config_api_v1_url}}"
+									],
+									"path": [
+										"service",
+										"customServices",
+										"{technology}",
+										"{id}"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Service - Detection full web request",
+					"item": [
+						{
+							"name": "Web request service detection rules - List",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{config_api_v1_url}}/service/detectionRules/FULL_WEB_REQUEST",
+									"host": [
+										"{{config_api_v1_url}}"
+									],
+									"path": [
+										"service",
+										"detectionRules",
+										"FULL_WEB_REQUEST"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Web request service detection rule - Specific",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{config_api_v1_url}}/service/detectionRules/FULL_WEB_REQUEST/{id}",
+									"host": [
+										"{{config_api_v1_url}}"
+									],
+									"path": [
+										"service",
+										"detectionRules",
+										"FULL_WEB_REQUEST",
+										"{id}"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Service - Detection full web service",
+					"item": [
+						{
+							"name": "Full web service detection rules - List",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{config_api_v1_url}}/service/detectionRules/FULL_WEB_SERVICE",
+									"host": [
+										"{{config_api_v1_url}}"
+									],
+									"path": [
+										"service",
+										"detectionRules",
+										"FULL_WEB_SERVICE"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Full web service detection rule - Specific",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{config_api_v1_url}}/service/detectionRules/FULL_WEB_SERVICE/{id}",
+									"host": [
+										"{{config_api_v1_url}}"
+									],
+									"path": [
+										"service",
+										"detectionRules",
+										"FULL_WEB_SERVICE",
+										"{id}"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Service - Detection opaque and external web request",
+					"item": [
+						{
+							"name": "Opaque and external web request detection rules - List",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{config_api_v1_url}}/service/detectionRules/OPAQUE_AND_EXTERNAL_WEB_REQUEST",
+									"host": [
+										"{{config_api_v1_url}}"
+									],
+									"path": [
+										"service",
+										"detectionRules",
+										"OPAQUE_AND_EXTERNAL_WEB_REQUEST"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Opaque and external web request detection rule - Specific",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{config_api_v1_url}}/service/detectionRules/OPAQUE_AND_EXTERNAL_WEB_REQUEST/{id}",
+									"host": [
+										"{{config_api_v1_url}}"
+									],
+									"path": [
+										"service",
+										"detectionRules",
+										"OPAQUE_AND_EXTERNAL_WEB_REQUEST",
+										"{id}"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Service - Detection opaque and external web service",
+					"item": [
+						{
+							"name": "Opaque and external web service detection rules - List",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{config_api_v1_url}}/service/detectionRules/OPAQUE_AND_EXTERNAL_WEB_SERVICE",
+									"host": [
+										"{{config_api_v1_url}}"
+									],
+									"path": [
+										"service",
+										"detectionRules",
+										"OPAQUE_AND_EXTERNAL_WEB_SERVICE"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Opaque and external web service detection rule - Specific",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{config_api_v1_url}}/service/detectionRules/OPAQUE_AND_EXTERNAL_WEB_SERVICE/{id}",
+									"host": [
+										"{{config_api_v1_url}}"
+									],
+									"path": [
+										"service",
+										"detectionRules",
+										"OPAQUE_AND_EXTERNAL_WEB_SERVICE",
+										"{id}"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Service - Failure detection rules",
+					"item": [
+						{
+							"name": "Service failure detection rules - List",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{config_api_v1_url}}/service/failureDetection/parameterSelection/rules",
+									"host": [
+										"{{config_api_v1_url}}"
+									],
+									"path": [
+										"service",
+										"failureDetection",
+										"parameterSelection",
+										"rules"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Service failure detection rules - Specific",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{config_api_v1_url}}/service/failureDetection/parameterSelection/rules/{id}",
+									"host": [
+										"{{config_api_v1_url}}"
+									],
+									"path": [
+										"service",
+										"failureDetection",
+										"parameterSelection",
+										"rules",
+										"{id}"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Service - Request attributes",
+					"item": [
+						{
+							"name": "Request attributes - List",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{config_api_v1_url}}/service/requestAttributes",
+									"host": [
+										"{{config_api_v1_url}}"
+									],
+									"path": [
+										"service",
+										"requestAttributes"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Request attribute - Specific",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{config_api_v1_url}}/service/requestAttributes/{id}",
+									"host": [
+										"{{config_api_v1_url}}"
+									],
+									"path": [
+										"service",
+										"requestAttributes",
+										"{id}"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Service - Request naming",
+					"item": [
+						{
+							"name": "Request naming rules - List",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{config_api_v1_url}}/service/requestNaming",
+									"host": [
+										"{{config_api_v1_url}}"
+									],
+									"path": [
+										"service",
+										"requestNaming"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Request naming rules - Specific",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{config_api_v1_url}}/service/requestNaming/{id}",
+									"host": [
+										"{{config_api_v1_url}}"
+									],
+									"path": [
+										"service",
+										"requestNaming",
+										"{id}"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Global service resource requests - List",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{config_api_v1_url}}/service/resourceNaming",
+									"host": [
+										"{{config_api_v1_url}}"
+									],
+									"path": [
+										"service",
+										"resourceNaming"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
 		}
 	],
 	"auth": {
